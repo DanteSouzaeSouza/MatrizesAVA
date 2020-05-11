@@ -20,6 +20,7 @@ namespace MatrizesAVA
         private void btnPreenche_Click(object sender, EventArgs e)
         {
             lstMatriz.Items.Clear();
+            lstTransposta.Items.Clear();
 
             //variáveis para acessar as posições dos índices da matriz
             // linha - representa linha
@@ -43,9 +44,19 @@ namespace MatrizesAVA
 
             for (linha = 0; linha < 5; linha++)
             {
+                
                 for (coluna = 0; coluna < 4; coluna++)
                 {
                     lstMatriz.Items.Add("elemento = " + numeros[linha, coluna]);
+                }
+            }
+
+            for (coluna = 0; coluna < 4; coluna++)
+            {
+
+                for (linha = 0; linha < 5; linha++)
+                {
+                    lstTransposta.Items.Add("elemento = " + numeros[linha, coluna]);
                 }
             }
         }

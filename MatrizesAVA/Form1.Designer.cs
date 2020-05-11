@@ -30,6 +30,9 @@
         {
             this.btnPreenche = new System.Windows.Forms.Button();
             this.lstMatriz = new System.Windows.Forms.ListBox();
+            this.lstTransposta = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnPreenche
@@ -45,21 +48,51 @@
             // lstMatriz
             // 
             this.lstMatriz.FormattingEnabled = true;
-            this.lstMatriz.Location = new System.Drawing.Point(13, 49);
+            this.lstMatriz.Location = new System.Drawing.Point(13, 62);
             this.lstMatriz.Name = "lstMatriz";
-            this.lstMatriz.Size = new System.Drawing.Size(120, 186);
+            this.lstMatriz.Size = new System.Drawing.Size(120, 173);
             this.lstMatriz.TabIndex = 1;
             // 
-            // Form1
+            // lstTransposta
+            // 
+            this.lstTransposta.FormattingEnabled = true;
+            this.lstTransposta.Location = new System.Drawing.Point(162, 62);
+            this.lstTransposta.Name = "lstTransposta";
+            this.lstTransposta.Size = new System.Drawing.Size(120, 173);
+            this.lstTransposta.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Linhas:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(159, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Colunas:";
+            // 
+            // FrmMatriz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(303, 258);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lstTransposta);
             this.Controls.Add(this.lstMatriz);
             this.Controls.Add(this.btnPreenche);
-            this.Name = "Form1";
+            this.Name = "FrmMatriz";
             this.Text = "Matrizes";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -67,6 +100,9 @@
 
         private System.Windows.Forms.Button btnPreenche;
         private System.Windows.Forms.ListBox lstMatriz;
+        private System.Windows.Forms.ListBox lstTransposta;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
